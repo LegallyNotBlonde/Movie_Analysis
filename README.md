@@ -1,8 +1,9 @@
 # Movie_Analysis
 
 ## Project Collaborators:
-[Iosif Vard](https://github.com/IosifVard)
-[Jean Vicencio](https://github.com/jpvicencio)
+* [Iosif Vard](https://github.com/IosifVard)
+* [Jean Vicencio](https://github.com/jpvicencio)
+* [Sabrina Linden](https://github.com/LegallyNotBlonde)
 
 ## Purpose: 
 1. **Forecasting Movie Sales Based on Historical Performance**
