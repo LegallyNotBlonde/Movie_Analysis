@@ -1,5 +1,9 @@
 # Movie_Analysis
 
+## Project Collaborators:
+[Iosif Vard](https://github.com/IosifVard)
+[Jean Vicencio](https://github.com/jpvicencio)
+
 ## Purpose: 
 1. **Forecasting Movie Sales Based on Historical Performance**
 2. **Make suggestions to movie producers on how to maximize their gross revenue**
