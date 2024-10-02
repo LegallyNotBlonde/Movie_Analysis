@@ -34,7 +34,8 @@ ___
 
 #### Averages and data distribution - Jean - due date: 
 * Create a copy of the cleaned dataframe for safety (in case of any errors our cleaned data stays intact)
-* Averages of the whole data set gross revenue, budjet, movie duration, actors (do we need to do averages group by, for example, genre or budget?)
+* Averages of the whole data set gross revenue, budjet, movie duration, actors (do we need to do averages group by, for example, genre or budget?) **create a sepate data frame for it to is in Tablea**
+* Min and Max - for example 5 movies with the highest revenue and 5 movies with the lowest revenue - **create a sepate data frame for it to is in Tablea**
 * Data distribution for the following values: gross revenue, budget, and movie durations
 * T-test and ANOVA tests - are they beneficial for our type of data with multiple generes combined?
 
@@ -57,7 +58,8 @@ ___
 
 ### Create at least THREE visualization of the most important trends (some of the possible options):
 * Feature Importance: Visualize the top features that significantly affect movie sales, helping to understand the most influential factors.
-* Bar Chart: Display box office revenue per genre to highlight which genres perform best.
+<P> Create a visualization comparing the most profitable features on the X-axis (e.g., movies with very popular actors vs. less popular actors) and gross revenue on the Y-axis. Add a line showing the average gross revenue across all movies to highlight the influence. Use a similar visualization style for other graphs.
+* Bar Chart: Display box office revenue per genre to highlight which genres perform best. Include a line that shows a
 * Bar Chart: Showcase Top 10 actors box office revenue.
 * Line Graph:  Illustrate the trend of box office sales over the years to identify patterns.
 * Linear Regression: Demonstrate the relationship between selected features and box office performance.
