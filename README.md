@@ -7,7 +7,7 @@
 
 ## Purpose: 
 1. **Forecasting Movie Sales Based on Historical Performance**
-2. **Make suggestions to movie producers on how to maximize their gross revenue**
+2. **Make suggestions to movie producers on how to maximize their gross revenue**: identify which types of movies made the highest profit
 
 
 * **PLEASE GIT PULL THE UPDATED FILES EVERY TIME BEFORE WRITING YOUR CODE**.
@@ -19,20 +19,24 @@ ___
 
 ## Draft Plan for the project
 
-### ETL
-* remove lines with null values
-* remove unnecessary columns (like links, etc), but keep majority
-* filter out or remove movies outside of US (US scope only)
-* check for mispelling, wrong/future dates(years), other anomalies thatare more likely data errors
+### ETL - Iosif
+* remove lines with missing values - several columns have missing values
+* remove unnecessary columns: column R, AA
+* filter out or remove movies outside of US (US scope only) base dn country
+* options to validate the data: check for mispelling, wrong/future dates(years), other anomalies thatare more likely data errors
+* distributuin based on budject and gross revenue
 * correcr the datatypes where needed
 * change columns' names for self-explnatory options
 
-### Data Testing
-* P value and other statistical test
-* data distribution based on gross revenue, budget and other factors
+### After clean up, check the data what is left
+
+### Data Testing - ??
+* P value and ANOVA statistical test
+
+# Averages and data distribution based on gross revenue, budget and other factors, group by? - Jean
 
 ### Machine Learning
-* Establish and assess Baseline metrics like linear regression (gross reveue)
+* Establish and assess Baseline metrics like linear regression (gross reveueon y)
 <p> PCA, scaling?
 
 * Create Neuron Network model (possibly  Sequential model with ReLU-activate), play with it such as: 
@@ -40,6 +44,7 @@ ___
 <p> - changing the 2nd and 3rd activation function to 'sigmoid' is a good choice, this also helps boost the accuracy. Adding or reducing the number of epochs to the training regimen. 
 
 * optionally use Random forest to identify most influential features and put them on the graph
+* is there any machine leaning code in Neuron Network to identify the most influential featuers (so we do not have to use Randmom forest)
 
 * **LINKS** for sources https://developers.google.com/machine-learning/intro-to-ml/supervised,
 * Here are some links to help you further your understanding on Neural Nets. https://www.scaler.com/topics/binning-in-data-mining/ https://www.geeksforgeeks.org/binning-in-data-mining/ https://www.scaler.com/topics/deep-learning/neural-network-hyperparameters-tuning/ https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6 https://www.geeksforgeeks.org/activation-functions-neural-networks/ https://machinelearningmastery.com/choose-an-activation-function-for-deep-learning/ https://scikit-learn.org/stable/modules/neural_networks_supervised.html https://www.tensorflow.org/api_docs/python/tf
@@ -63,6 +68,9 @@ ___
 * if we have time, discuss how we can keep our audience engaged, like maybe asking them an engaging question like post in the zoom chat their favorote movie or genre
 
 ### Ethical considerations
+
+### Data Limitations
+* prices for old movies may not include inflation adjustments
 ___
 
 ### Data Source:
