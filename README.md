@@ -8,7 +8,7 @@
 ## Purpose: 
 1. **Forecasting Movie Sales Based on Historical Performance**
 2. **Make suggestions to movie producers on how to maximize their gross revenue**: 
-<p> - *identifying key secret sauce to successful movies such as which types of movies made the highest gross revenue, which features affected the revenue the most*
+<p> - identifying key secret sauce to successful movies such as which types of movies (which features) made the highest gross revenue.
 
 
 * **PLEASE GIT PULL THE UPDATED FILES EVERY TIME BEFORE WRITING YOUR CODE**.
@@ -58,11 +58,12 @@ ___
 
 ### Create at least THREE visualization of the most important trends (some of the possible options):
 * Feature Importance: Visualize the top features that significantly affect movie sales, helping to understand the most influential factors.
-<P> Create a visualization comparing the most profitable features on the X-axis (e.g., movies with very popular actors vs. less popular actors) and gross revenue on the Y-axis. Add a line showing the average gross revenue across all movies to highlight the influence. Use a similar visualization style for other graphs.
-* Bar Chart: Display box office revenue per genre to highlight which genres perform best. Include a line that shows a
-* Bar Chart: Showcase Top 10 actors box office revenue.
-* Line Graph:  Illustrate the trend of box office sales over the years to identify patterns.
-* Linear Regression: Demonstrate the relationship between selected features and box office performance.
+<p> Create a visualization comparing the most profitable features on the X-axis (e.g., movies with very popular actors vs. less popular actors) and gross revenue on the Y-axis. 
+Add a line showing the average gross revenue across all movies to highlight the influence. Use a similar visualization style for other graphs:
+<p>  * Bar Chart: Display box office revenue per genre to highlight which genres perform best. 
+<p>  * Bar Chart: Showcase Top 10 actors box office revenue.
+<p>  * Line Graph:  Illustrate the trend of box office sales over the years to identify patterns.
+<p>  * Linear Regression: Demonstrate the relationship between selected features and box office performance.
 
 ### Results:
 
