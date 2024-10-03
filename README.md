@@ -5,6 +5,49 @@
 * [Jean Vicencio](https://github.com/jpvicencio)
 * [Sabrina Linden](https://github.com/LegallyNotBlonde)
 
+
+Title: Forecasting Movie Sales Based on Historical Performance
+
+Purpose:
+To provide actionable recommendations to producers on how to maximize revenue based on historical performance data and help them in evaluating the risks associated with different films, aiding in decision-making for potential investments.
+
+Objective:
+To predict future movie sales by analyzing historical performance data related to actors, directors, genres, and other factors. 
+
+1. Data Preprocessing
+•	Load the Dataset: Use pandas to read the dataset.
+•	Remove Null Values: Check for nulls in important columns and handle them (drop or impute).
+•	Drop Irrelevant Columns: Identify and remove columns that don’t contribute to the prediction (e.g., identifiers).
+•	Convert Data Types: Ensure that all features are in the appropriate format (e.g., convert categorical variables to numerical using encoding).
+
+2. Exploratory Data Analysis (EDA)
+•	Descriptive Statistics: Use .describe() to get an overview of the dataset.
+•	Averages and Distributions: Visualize the distribution of key features using histograms or box plots.
+o	Visualization: Histograms for continuous features (e.g., budget, revenue), bar plots for categorical features (e.g., genres, directors).
+•	Correlation Analysis: Calculate correlation coefficients and visualize with a heatmap to identify relationships between features and movie sales.
+o	Visualization: Heatmap using seaborn.
+
+3. Feature Selection
+•	Feature Importance: Use techniques like correlation coefficients, recursive feature elimination, or model-based importance (e.g., tree-based models) to identify features influencing movie sales.
+•	Visualization: Bar plots to show feature importance.
+
+4. Linear Regression Model
+•	Split the Data: Use train-test split for model validation.
+•	Build the Model: Use scikit-learn to create a linear regression model.
+•	Evaluate Performance: Assess model performance using metrics like R², Mean Absolute Error (MAE), and Mean Squared Error (MSE).
+•	Visualization: Scatter plot of predicted vs. actual sales.
+5. Neural Network Model
+•	Define the Neural Network: Use Keras to build a neural network model with appropriate layers.
+•	Train the Model: Train the model on the training set and validate on the test set.
+•	Evaluate Performance: Use the same metrics as in the linear regression phase.
+•	Visualization: Learning curves to show training and validation loss over epochs.
+6. Model Optimization
+•	Hyperparameter Tuning: Experiment with different architectures, activation functions, learning rates, and batch sizes.
+•	Visualization: Plot accuracy and loss curves for training and validation sets.
+
+
+
+
 ## Purpose: 
 1. **Forecasting Movie Sales Based on Historical Performance**
 2. **Make suggestions to movie producers on how to maximize their gross revenue**: 
