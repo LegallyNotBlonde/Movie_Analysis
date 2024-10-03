@@ -23,12 +23,12 @@ To predict future movie sales by analyzing historical performance data related t
 2. Exploratory Data Analysis (EDA)
 •	Descriptive Statistics: Use .describe() to get an overview of the dataset.
 •	Averages and Distributions: Visualize the distribution of key features using histograms or box plots.
-o	Visualization: Histograms for continuous features (e.g., budget, revenue), bar plots for categorical features (e.g., genres, directors).
-•	Correlation Analysis: Calculate correlation coefficients and visualize with a heatmap to identify relationships between features and movie sales.
+o	Visualization: bar plots for categorical features (e.g., genres, directors)
+•	Correlation Analysis: Calculate the correlation between numerical features using a heatmap. This will help identify relationships that might influence movie sales.
 o	Visualization: Heatmap using seaborn.
 
 3. Feature Selection
-•	Feature Importance: Use techniques like correlation coefficients, recursive feature elimination, or model-based importance (e.g., tree-based models) to identify features influencing movie sales.
+•	Feature Importance: Use random forest to to identify features influencing movie sales.
 •	Visualization: Bar plots to show feature importance.
 
 4. Linear Regression Model
@@ -40,10 +40,10 @@ o	Visualization: Heatmap using seaborn.
 •	Define the Neural Network: Use Keras to build a neural network model with appropriate layers.
 •	Train the Model: Train the model on the training set and validate on the test set.
 •	Evaluate Performance: Use the same metrics as in the linear regression phase.
-•	Visualization: Learning curves to show training and validation loss over epochs.
+
 6. Model Optimization
 •	Hyperparameter Tuning: Experiment with different architectures, activation functions, learning rates, and batch sizes.
-•	Visualization: Plot accuracy and loss curves for training and validation sets.
+
 
 
 
