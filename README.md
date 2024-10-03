@@ -14,10 +14,12 @@ To provide actionable recommendations to producers on how to maximize revenue ba
 Objective:
 To predict future movie sales by analyzing historical performance data related to actors, directors, genres, and other factors. 
 
+Scope: USA
+
 1. Data Preprocessing
 •	Load the Dataset: Use pandas to read the dataset.
 •	Remove Null Values: Check for nulls in important columns and handle them (drop or impute).
-•	Drop Irrelevant Columns: Identify and remove columns that don’t contribute to the prediction (e.g., identifiers).
+•	Drop Irrelevant Columns: movie_imdb_link and aspect_ratio.
 •	Convert Data Types: Ensure that all features are in the appropriate format (e.g., convert categorical variables to numerical using encoding).
 
 2. Exploratory Data Analysis (EDA)
