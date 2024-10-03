@@ -14,42 +14,6 @@ To provide actionable recommendations to producers on how to maximize revenue ba
 Objective:
 To predict future movie sales by analyzing historical performance data related to actors, directors, genres, and other factors. 
 
-Scope: USA
-
-1. Data Preprocessing
-•	Load the Dataset: Use pandas to read the dataset.
-•	Remove Null Values: Check for nulls in important columns and handle them (drop or impute).
-•	Drop Irrelevant Columns: movie_imdb_link and aspect_ratio.
-•	Convert Data Types: Ensure that all features are in the appropriate format (e.g., convert categorical variables to numerical using encoding).
-
-2. Exploratory Data Analysis (EDA)
-•	Descriptive Statistics: Use .describe() to get an overview of the dataset.
-•	Averages and Distributions: Visualize the distribution of key features using histograms or box plots.
-o	Visualization: bar plots for categorical features (e.g., genres, directors)
-•	Correlation Analysis: Calculate the correlation between numerical features using a heatmap. This will help identify relationships that might influence movie sales.
-o	Visualization: Heatmap using seaborn.
-
-3. Feature Selection
-•	Feature Importance: Use random forest to to identify features influencing movie sales.
-•	Visualization: Bar plots to show feature importance.
-
-4. Linear Regression Model
-•	Split the Data: Use train-test split for model validation.
-•	Build the Model: Use scikit-learn to create a linear regression model.
-•	Evaluate Performance: Assess model performance using metrics like R², Mean Absolute Error (MAE), and Mean Squared Error (MSE).
-•	Visualization: Scatter plot of predicted vs. actual sales.
-5. Neural Network Model
-•	Define the Neural Network: Use Keras to build a neural network model with appropriate layers.
-•	Train the Model: Train the model on the training set and validate on the test set.
-•	Evaluate Performance: Use the same metrics as in the linear regression phase.
-
-6. Model Optimization
-•	Hyperparameter Tuning: Experiment with different architectures, activation functions, learning rates, and batch sizes.
-
-
-
-
-
 ## Purpose: 
 1. **Forecasting Movie Sales Based on Historical Performance**
 2. **Make suggestions to movie producers on how to maximize their gross revenue**: 
@@ -66,29 +30,43 @@ ___
 ## Draft Plan for the project
 
 ### ETL: clean the data and save a data frame - Iosif - due date:
-* remove lines with missing values - several columns have missing values
-* remove unnecessary columns: column R, AA
-* filter out or remove movies outside of US (US scope only) 
-* options to validate the data: check for mispelling, wrong/future dates(years), other anomalies thatare more likely data errors
-* correct the datatypes where needed
-* change columns' names for self-explnatory options
+* Load the Dataset: Use pandas to read the dataset.
+* Remove Null Values: Check for nulls in important columns and handle them (drop or impute); several columns have missing values
+* Drop Irrelevant Columns: movie_imdb_link and aspect_ratio (column R, AA)
+* Convert Data Types where needed: Ensure that all features are in the appropriate format (e.g., convert categorical variables to numerical using encoding).
+* Filter out or remove movies outside of US (US scope only) 
+* Other options to validate the data: check for mispelling, wrong/future dates(years), other anomalies thatare more likely data errors
+* Change columns' names for self-explnatory options where needed
 * **After the data is cleaned the DataFrame will be saved in 'Outcome_Files' folder.**
 
 <p> GROUP: *After clean up, check the data what is left (size of the data, number of languages).* to verify if we have sufficient data
 
 
 #### Averages and data distribution - Jean - due date: 
+* Use .describe() to get an overview of the dataset
 * Create a copy of the cleaned dataframe for safety (in case of any errors our cleaned data stays intact)
 * Averages of the whole data set gross revenue, budjet, movie duration, actors (do we need to do averages group by, for example, genre or budget?) **create a sepate data frame for it to is in Tablea**
 * Min and Max - for example 5 movies with the highest revenue and 5 movies with the lowest revenue - **create a sepate data frame for it to is in Tablea**
-* Data distribution for the following values: gross revenue, budget, and movie durations
+* Visualize the distribution of key features using box plots.for the following values: gross revenue, budget, and movie durations
 * T-test and ANOVA tests - are they beneficial for our type of data with multiple generes combined?
 
 ### Machine Learning - Sabrina: question to TAs: if Jean and I work in paralel on the same file and submit it to GitHub via different branches, will it combine them both well (no code will be lost)?
 
-1. Establish and assess Baseline metrics like linear regression ( gross revenue on y, using scaling)
+1. Establish and assess Baseline metrics like Linear Regression Model
+*  Use scaling (gross revenue, budject)
+* Split the Data: Use train-test split for model validation.
+* Build the Model: Use scikit-learn to create a linear regression model.
+* Evaluate Performance: Assess model performance using metrics like R², Mean Absolute Error (MAE), and Mean Squared Error (MSE).
+* Visualization: Scatter plot of predicted vs. actual sales.
 
 2.1. Create Neuron Network model (possibly  Sequential model with ReLU-activate), play with it such as: 
+
+* Define the Neural Network: Use Keras to build a neural network model with appropriate layers.
+* Train the Model: Train the model on the training set and validate on the test set.
+* Evaluate Performance: Use the same metrics as in the linear regression phase.
+* Model Optimization
+•	Hyperparameter Tuning: Experiment with different architectures, activation functions, learning rates, and batch sizes:
+
 <p> - different number of **hidden layers**, different **activation button**,  adding/creating more **bins** for rare occurrences in columns. Increasing or decreasing the **number of values for each bin**. Adding **more neurons to a hidden layer**. 
 <p> - changing the 2nd and 3rd activation function to 'sigmoid' is a good choice, this also helps boost the accuracy. Adding or reducing the number of epochs to the training regimen. 
 
@@ -109,6 +87,7 @@ Add a line showing the average gross revenue across all movies to highlight the 
 <p>  * Bar Chart: Showcase Top 10 actors box office revenue.
 <p>  * Line Graph:  Illustrate the trend of box office sales over the years to identify patterns.
 <p>  * Linear Regression: Demonstrate the relationship between selected features and box office performance.
+
 
 ### Results:
 
