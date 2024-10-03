@@ -6,18 +6,12 @@
 * [Sabrina Linden](https://github.com/LegallyNotBlonde)
 
 
-Title: Forecasting Movie Sales Based on Historical Performance
-
-Purpose:
-To provide actionable recommendations to producers on how to maximize revenue based on historical performance data and help them in evaluating the risks associated with different films, aiding in decision-making for potential investments.
-
-Objective:
-To predict future movie sales by analyzing historical performance data related to actors, directors, genres, and other factors. 
+## Title: Forecasting Movie Sales Based on Historical Performance
 
 ## Purpose: 
 1. **Forecasting Movie Sales Based on Historical Performance**
-2. **Make suggestions to movie producers on how to maximize their gross revenue**: 
-<p> - identifying key secret sauce to successful movies such as which types of movies (which features) made the highest gross revenue.
+2. **Provide recommendations to movie producers on maximizing gross revenue:**: 
+Identify key factors for successful movies, such as which types or features contribute most to high gross revenue.
 
 
 * **PLEASE GIT PULL THE UPDATED FILES EVERY TIME BEFORE WRITING YOUR CODE**.
@@ -26,8 +20,7 @@ To predict future movie sales by analyzing historical performance data related t
 * **KIND REMINDER FOR EVERYONE TO SUBMIT THEIR CODES IN ADDITIONAL BRANCHES AND NOT THE MAIN BRANCH**
 ___
 
-
-## Draft Plan for the project
+## Project Plan:
 
 ### ETL: clean the data and save a data frame - Iosif - due date:
 * Load the Dataset: Use pandas to read the dataset.
@@ -39,21 +32,32 @@ ___
 * Change columns' names for self-explnatory options where needed
 * **After the data is cleaned the DataFrame will be saved in 'Outcome_Files' folder.**
 
+**PS: Project requirements for ETL: You must use at least two of the following:**
+○ Python Pandas / Matplotlib
+○ JavaScript Plotly / Leaflet
+○ Database: SQL or MongoDB
+○ Google Cloud Platform
+○ Amazon AWS
+○ Tensorflow/Keras
+○ Pytorch
+○ Tableau
+
 <p> GROUP: *After clean up, check the data what is left (size of the data, number of languages).* to verify if we have sufficient data
 
 
 #### Averages and data distribution - Jean - due date: 
 * Use .describe() to get an overview of the dataset
 * Create a copy of the cleaned dataframe for safety (in case of any errors our cleaned data stays intact)
-* Averages of the whole data set gross revenue, budjet, movie duration, actors (do we need to do averages group by, for example, genre or budget?) **create a sepate data frame for it to is in Tablea**
+* Averages of the whole data set gross revenue, budjet, profit, movie duration, actors (do we need to do averages group by, for example, genre or budget?) **create a sepate data frame for it to is in Tablea**
 * Min and Max - for example 5 movies with the highest revenue and 5 movies with the lowest revenue - **create a sepate data frame for it to is in Tablea**
 * Visualize the distribution of key features using box plots.for the following values: gross revenue, budget, and movie durations
 * T-test and ANOVA tests - are they beneficial for our type of data with multiple generes combined?
 
-### Machine Learning - Sabrina: question to TAs: if Jean and I work in paralel on the same file and submit it to GitHub via different branches, will it combine them both well (no code will be lost)?
+### Machine Learning - Sabrina 
 
 1. Establish and assess Baseline metrics like Linear Regression Model
-*  Use scaling (gross revenue, budject)
+* Remove 'profit' column as added aggr field from gross-budget 
+* Use scaling (gross revenue, budject)
 * Split the Data: Use train-test split for model validation.
 * Build the Model: Use scikit-learn to create a linear regression model.
 * Evaluate Performance: Assess model performance using metrics like R², Mean Absolute Error (MAE), and Mean Squared Error (MSE).
@@ -79,7 +83,7 @@ ___
 * Additional Neural Nets Links: https://www.scaler.com/topics/binning-in-data-mining/ https://www.geeksforgeeks.org/binning-in-data-mining/ https://www.scaler.com/topics/deep-learning/neural-network-hyperparameters-tuning/ https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6 https://www.geeksforgeeks.org/activation-functions-neural-networks/ https://machinelearningmastery.com/choose-an-activation-function-for-deep-learning/ https://scikit-learn.org/stable/modules/neural_networks_supervised.html https://www.tensorflow.org/api_docs/python/tf
 
 
-### Create at least THREE visualization of the most important trends (some of the possible options):
+### Create at least THREE visualization of the most important trends (some of the possible options): to ne assigned
 * Feature Importance: Visualize the top features that significantly affect movie sales, helping to understand the most influential factors.
 <p> Create a visualization comparing the most profitable features on the X-axis (e.g., movies with very popular actors vs. less popular actors) and gross revenue on the Y-axis. 
 Add a line showing the average gross revenue across all movies to highlight the influence. Use a similar visualization style for other graphs:
@@ -87,6 +91,7 @@ Add a line showing the average gross revenue across all movies to highlight the 
 <p>  * Bar Chart: Showcase Top 10 actors box office revenue.
 <p>  * Line Graph:  Illustrate the trend of box office sales over the years to identify patterns.
 <p>  * Linear Regression: Demonstrate the relationship between selected features and box office performance.
+
 
 
 ### Results:
