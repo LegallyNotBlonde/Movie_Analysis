@@ -32,17 +32,6 @@ ___
 * Change columns' names for self-explnatory options where needed
 * **After the data is cleaned the DataFrame will be saved in 'Outcome_Files' folder.**
 
-**PS: Project requirements for ETL: You must use at least two of the following:**
-○ Python Pandas / Matplotlib
-○ JavaScript Plotly / Leaflet
-○ Database: SQL or MongoDB
-○ Google Cloud Platform
-○ Amazon AWS
-○ Tensorflow/Keras
-○ Pytorch
-○ Tableau
-
-<p> GROUP: *After clean up, check the data what is left (size of the data, number of languages).* to verify if we have sufficient data
 
 
 #### Averages and data distribution - Jean - due date: 
@@ -93,7 +82,6 @@ Add a line showing the average gross revenue across all movies to highlight the 
 <p>  * Linear Regression: Demonstrate the relationship between selected features and box office performance.
 
 
-
 ### Results:
 
 ### Conclusion:
@@ -106,10 +94,14 @@ Add a line showing the average gross revenue across all movies to highlight the 
 ### Ethical considerations:
 
 ### Data Limitations:
-* Prices for older movies may not include inflation adjustments.
-* Facebook likes (actors and directors popularity) were not available prior to wide spread of Facebook users.
-* Our data did not include date or month to establish if seasonality plays a role
-___
+* **Prices for older movies** may not include inflation adjustments.
+* **Information for older movies may be biased** since such movies are rarely shown during prime time, and the number of likes on social media platforms may not be accurate.
+* **Our data does not include date or month** information, making it difficult to analyze potential seasonality effects.
+* **Gross revenue in the dataset is recorded only for the first week** in theaters, excluding revenue from later shows. This may introduce biases, and gross revenue could also be affected by factors not included in the data, such as the number and quality of movie advertisements.
 
 ### Data Source:
 [Kaggle](https://www.kaggle.com/code/aditimulye/imdb-5000-movie-dataset-analysis)
+
+___
+
+### Repository Organization
