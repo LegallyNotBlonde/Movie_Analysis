@@ -18,6 +18,12 @@ Identify key factors for successful movies, such as which types or features cont
 * We will need to ensure we have only 1 file with the code (use only 1 file or combine several into one)
 * Let's use self-explanatory names for all files including images and graphs
 * **KIND REMINDER FOR EVERYONE TO SUBMIT THEIR CODES IN ADDITIONAL BRANCHES AND NOT THE MAIN BRANCH**
+
+__
+
+**BEFORE RUNNING A CODE IN GOOGLE COLAB:**
+Please **upload to google colab 'movie_metadata.csv' from 'Resources' folder to the same directory level as the code in Google Colab**.
+Other details of the repo structure are provided below the data sources.
 ___
 
 ## Project Plan:
