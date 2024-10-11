@@ -100,10 +100,10 @@ Add a line showing the average gross revenue across all movies to highlight the 
 ### Ethical considerations:
 
 ### Data Limitations:
-* **Prices for older movies** may not include inflation adjustments.
+* **Prices for older movies** do not include inflation adjustments.
 * **Information for older movies may be biased** since such movies are rarely shown during prime time, and the number of likes on social media platforms may not be accurate.
-* **Our data does not include date or month** information, making it difficult to analyze potential seasonality effects.
-* **Gross revenue in the dataset is recorded only for the first week** in theaters, excluding revenue from later shows. This may introduce biases, and gross revenue could also be affected by factors not included in the data, such as the number and quality of movie advertisements.
+* **Our data does not include date or month** information, making it difficult to analyze potential seasonality effects or competition if other blockbusters premiered in close proximity.
+* **Gross revenue in the dataset is recorded only for the first week in theaters**, excluding subsequent earnings. This may introduce biases, as revenue could be influenced by factors not captured in the data, such as later earnings, plot popularity, or marketing budget.
 
 ### Data Source:
 [Kaggle](https://www.kaggle.com/code/aditimulye/imdb-5000-movie-dataset-analysis)
