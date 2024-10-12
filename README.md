@@ -21,7 +21,6 @@ ___
 
 <p> To streamline these critical but potentially time-consuming analyses, we aimed to build a machine learning model to predict movie revenue based on historical records. However, due to limitations in our publicly available data, which are detailed below, the accuracy and scope of our predictions may be affected
 
-__
 
 **BEFORE RUNNING A CODE IN GOOGLE COLAB:**
 Please **upload 'movie_metadata.csv' from the 'Resources' folder to the same directory level as the code in Google Colab**.
@@ -29,11 +28,10 @@ ___
 
 ## Workflow Overview:
 
-### ETL: clean the data and save a data frame 
-Remove errors, duplicates, or missing values to ensure the data is accurate and usable. Clean data is essential for reliable results.
+### ETL:
+Cleaining data by removing errors, duplicates, or missing values to ensure the data is accurate and usable. Clean data is essential for reliable results.
 
-
-#### Data Exploration
+#### Data Exploration:
 Analyze the data's distribution, size, and types to understand its structure and key patterns. This helps identify which features are important and what transformations may be needed.
 
 ### Machine Learning 
@@ -84,7 +82,7 @@ ___
 ___
 
 ### Repository Organization
-* **main_code** contains all the code for data cleaning, exploration, machine learning models, and related plots
+* **Main_code** contains all the code for data cleaning, exploration, machine learning models, and related plots
 * **Notebooks** folder includes separate files with codes to clean and explore the data, and to create machine learning  models.
 * **Outcome_Files_DFs** folder has intermediate files like 'cleaned_data.csv'
 * **Presentation_and_Proposal** folder contains our final proposal in PDF format. However, after closely analyzing our data, we chose a Random Forest model instead of a Neural Network.
