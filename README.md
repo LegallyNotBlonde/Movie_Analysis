@@ -46,12 +46,12 @@ Analyze the data's distribution, size, and types to understand its structure and
 * **Model Tuning:** Adjust parameters and fine-tune the model to optimize its performance. This step maximizes accuracy and reliability.
 
 ### Create at least THREE visualization related to the scope of the project 
-* Please find the following visualization in our 'main-code' file: 
-<p> - 1. Data Distribution: Medians
-<p> - 2. Correlation Heatmap
-<p> - 3. Scatter plot of predicted vs. actual gross revenue
-<p> - 4. Feature Importance for Numeric and Categorical Features
-<p> - 5. Model Accuracy Rates for Multiple Linear Regression and Random Forest - plot or a table?
+* Please find the following visualization in our 'Main_Code_United' file: 
+<p> 1. Data Distribution: Medians
+<p> 2. Correlation Heatmap
+<p> 3. Scatter plot of predicted vs. actual gross revenue
+<p> 4. Feature Importance for Numeric and Categorical Features
+<p> 5. Model Accuracy Rates for Multiple Linear Regression and Random Forest - plot or a table?
 
 ## Results:
 
@@ -85,7 +85,7 @@ ___
 ___
 
 ### Repository Organization
-* **Main_code** contains all the code for data cleaning, exploration, machine learning models, and related plots
+* **Main_Code_United** contains all the code for data cleaning, exploration, machine learning models, and related plots
 * **Notebooks** folder includes separate files with codes to clean and explore the data, and to create machine learning  models.
 * **Outcome_Files_DFs** folder has intermediate files like 'cleaned_data.csv'
 * **Presentation_and_Proposal** folder contains our final proposal in PDF format. However, after closely analyzing our data, we chose a Random Forest model instead of a Neural Network.
