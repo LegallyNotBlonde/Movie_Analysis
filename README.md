@@ -19,7 +19,7 @@ ___
 <p> Evaluating marketing effectiveness through advertising ROI, social media engagement, and audience feedback is another effective strategy. Timing and competition analysis help identify optimal release windows, while audience demographics guide content tailoring. 
 <p> Monitoring talent metrics, such as actor popularity, helps predict box office success. Additionally, streaming data, ancillary market performance, and long-term digital distribution trends are analyzed to maximize revenue beyond initial releases.
 
-<p> To streamline these critical but potentially time-consuming analyses, we aimed to build a machine learning model to predict movie revenue based on historical records. However, due to limitations in our publicly available data, which are detailed below, the accuracy and scope of our predictions may be affected
+<p> To streamline these critical but potentially time-consuming analyses, we aimed to build a machine learning model to predict movie revenue based on historical records. However, due to limitations in our publicly available data, which are detailed below, the accuracy and scope of our predictions may be affected.
 
 
 **BEFORE RUNNING A CODE IN GOOGLE COLAB:**
@@ -29,7 +29,10 @@ ___
 ## Workflow Overview:
 
 ### ETL:
-Cleaining data by removing errors, duplicates, or missing values to ensure the data is accurate and usable. Clean data is essential for reliable results.
+* Data was uploaded as csv file from the source.
+* Cleaining data by removing errors, duplicates, or missing values to ensure the data is accurate and usable. Clean data is essential for reliable results.
+* We used Google Colab because of it convenience. The code saves 'cleaned_data' to Colab Environment.
+* Given the relatively small size of our data (around 3,000 lines with around 30 columns), we did not use PySpark, as it would only increase processing time
 
 #### Data Exploration:
 Analyze the data's distribution, size, and types to understand its structure and key patterns. This helps identify which features are important and what transformations may be needed.
@@ -43,12 +46,12 @@ Analyze the data's distribution, size, and types to understand its structure and
 * **Model Tuning:** Adjust parameters and fine-tune the model to optimize its performance. This step maximizes accuracy and reliability.
 
 ### Create at least THREE visualization related to the scope of the project 
-* Data Distribution and/or Averages
-* Heatmap
-* Model Accuracy Rates
-* Numeric Feature Importance
-* Scatter plot of predicted vs. actual sales?
-
+* Please find the following visualization in our 'main-code' file: 
+<p> - 1. Data Distribution: Medians
+<p> - 2. Correlation Heatmap
+<p> - 3. Scatter plot of predicted vs. actual gross revenue
+<p> - 4. Feature Importance for Numeric and Categorical Features
+<p> - 5. Model Accuracy Rates for Multiple Linear Regression and Random Forest - plot or a table?
 
 ## Results:
 
