@@ -34,22 +34,23 @@ ___
 * We used Google Colab because of it convenience. The code saves 'cleaned_data' to Colab Environment.
 * Given the relatively small size of our data (around 3,000 lines with around 30 columns), we did not use PySpark, as it would only increase processing time
 
-#### Data Exploration:
+### Data Exploration:
 Analyze the data's distribution, size, and types to understand its structure and key patterns. This helps identify which features are important and what transformations may be needed.
 
 ### Machine Learning 
 * **Model Selection:** Evaluate different machine learning models based on the type and size of the data.
 * Establish and assess Baseline metrics like **Linear Regression Model**
-* Based on size our data, we used **Random Forest** model using **StandardScale**
+* Based on size our data, we used **Random Forest** model using **StandardScale** and **get_dummies** function.
 * **Data Splitting, Training, and Evaluation:** Divide the data into training and testing sets. Train the model using the training data to learn patterns and relationships, then evaluate its performance with the testing set to ensure it accurately predicts new information.
 * **Feature importance** and its implementation depend on whether the model is overfitting or underfitting. However, identifying the most influential features can still provide crucial insights into effective movie strategies, such as prioritizing actors, marketing, or release timing, regardless of model performance.
+* Assess model performance to determine which to develop further by implementing feature engineering techniques.
 * **Model Tuning:** Adjust parameters and fine-tune the model to optimize its performance. This step maximizes accuracy and reliability.
 
 ### Create at least THREE visualization related to the scope of the project 
 * Please find the following visualization in our 'Main_Code_United' file: 
 <p> 1. Data Distribution: Medians
 <p> 2. Correlation Heatmap
-<p> 3. Scatter plot of predicted vs. actual gross revenue
+<p> 3. Scatter plot of predicted vs. actual gross revenue (Multiple Linear Regression Model)
 <p> 4. Feature Importance for Numeric and Categorical Features
 <p> 5. Model Accuracy Rates for Multiple Linear Regression and Random Forest - plot or a table?
 
