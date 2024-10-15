@@ -37,25 +37,27 @@ ___
 ### Data Exploration:
 Analyze the data's distribution, size, and types to understand its structure and key patterns. This helps identify which features are important and what transformations may be needed.
 
-### Machine Learning 
+### Machine Learning: 
 * **Model Selection:** Evaluate different machine learning models based on the type and size of the data.
 * Establish and assess Baseline metrics like **Linear Regression Model**
 * Based on size our data, we used **Random Forest** model using **StandardScale** and **get_dummies** function.
 * **Data Splitting, Training, and Evaluation:** Divide the data into training and testing sets. Train the model using the training data to learn patterns and relationships, then evaluate its performance with the testing set to ensure it accurately predicts new information.
 * **Feature importance** and its implementation depend on whether the model is overfitting or underfitting. However, identifying the most influential features can still provide crucial insights into effective movie strategies, such as prioritizing actors, marketing, or release timing, regardless of model performance.
 * Assess model performance to determine which to develop further by implementing feature engineering techniques.
-* **Model Tuning:** Adjust parameters and fine-tune the model to optimize its performance. This step maximizes accuracy and reliability.
+* **Model Optimization:** **Label encoding** and **feature engineering** helped enhance the model and maximize its accuracy and reliability.
 
-### Create at least THREE visualization related to the scope of the project 
+### 'Main_Code.ipynb'included the following visualizations related to the scope of the project: 
 * Please find the following visualization in our 'Main_Code_United' file: 
-<p> 1. Data Distribution: Medians
+<p> 1. Data Distribution
 <p> 2. Correlation Heatmap
 <p> 3. Scatter plot of predicted vs. actual gross revenue (Multiple Linear Regression Model)
-<p> 4. Feature Importance for Numeric and Categorical Features
-<p> 5. Model Accuracy Rates for Multiple Linear Regression and Random Forest - plot or a table?
+<p> 4. Feature Importance for Numeric and Categorical Features (Basic Random Forest Model)
+<p> 5. Feature Importance and Heatmap for Numeric Values in the Optimized Random Forest Model
+<p> 6. Model Accuracy Rates Comparison: Linear Regression vs Basic vs Optimized Random Forest
 
-## Results:
+## Conclusion:
 
+The Optimized Random Forest model outperforms both the Multiple Linear Regression and Basic Random Forest models. With an R-Squared of 0.999952, it explains nearly all the variance, while the other models show lower values (0.679788 and 0.581184). The optimized model also has much lower MSE, MAE, and RMSE, indicating far more accurate predictions. This demonstrates that optimization significantly improves the model's performance.
 
 ### Presentation preparation:
 * Our audience - other data analysts and the focus is a technical aspect of the project
@@ -66,7 +68,8 @@ Analyze the data's distribution, size, and types to understand its structure and
 ___
 
 ### Ethical considerations:
-In this project, we used only publicly available, anonymized data to ensure privacy. We acknowledged dataset limitations and biases, such as missing release dates and revenue data, which may impact prediction accuracy. We mitigated bias by focusing on diverse variables and clearly communicated our analysis limitations. Our aim was to provide actionable insights to producers responsibly, supporting data-driven decisions while respecting creative integrity.
+* In this project, we used only publicly available, anonymized data to ensure privacy. We acknowledged dataset limitations and biases, such as missing release dates and revenue data, which may impact prediction accuracy. We mitigated bias by focusing on diverse variables and clearly communicated our analysis limitations. Our aim was to provide actionable insights to producers responsibly, supporting data-driven decisions while respecting creative integrity.
+* Could this analysis encourage studios to greenlight only projects predicted to be blockbusters, potentially sidelining smaller, more diverse films? While we can't know for certain, this is an important ethical consideration worth discussing.
 
 ___
 
