@@ -43,7 +43,7 @@ Analyze the data's distribution, size, and types to understand its structure and
 * Assess model performance to determine which to develop further by implementing feature engineering techniques.
 * **Model Optimization:** **Label encoding** and **feature engineering** helped enhance the model and maximize its accuracy and reliability.
 
-### 'Main_Code.ipynb'included the following visualizations related to the scope of the project: 
+### 'Main_Code.ipynb' includes the following visualizations related to the scope of the project: 
 * Please find the following visualization in our 'Main_Code_United' file: 
 <p> 1. Data Distribution
 <p> 2. Correlation Heatmap
@@ -56,12 +56,9 @@ Analyze the data's distribution, size, and types to understand its structure and
 
 The Optimized Random Forest model outperforms both the Multiple Linear Regression and Basic Random Forest models. With an R-Squared of 0.999952, it explains nearly all the variance, while the other models show lower values (0.679788 and 0.581184). The optimized model also has much lower MSE, MAE, and RMSE, indicating far more accurate predictions. This demonstrates that optimization significantly improves the model's performance.
 
-### Presentation preparation:
-* Our audience - other data analysts and the focus is a technical aspect of the project
-* The presentation is up to 10 minutes. Ensure we don't spend too much time on less important details and allocate enough time for the most important information
-* Combine our code into 1 file, keeping only the most important thinngs that we're going to present
-* Keeping audience engaging, but keeping the serious tone of our presentation
+___
 
+* This project is intended for Data Analysts and Machine Learning professionals.
 ___
 
 ### Ethical considerations:
@@ -74,7 +71,6 @@ ___
 * Gross revenue, budget, and profit figures are not adjusted for inflation.
 * The dataset lacks release dates, hindering analysis of seasonality effects or competition when other major films are released close by.
 * It only captures earnings from the first week in cinemas, missing subsequent revenue.
-* Movie genres and plot keywords are arranged alphabetically instead of by significance, impacting the model's precision.
 * The data does not capture critical variables like marketing spend, plot popularity, theater count, and audience demographics.
 * Including these influential elements could greatly enhance the accuracy of the prediction mode.
 * Given that modern movies can generate up to 500 million dollar profit, continued investment and advancements in data analytics can provide even greater benefits.
@@ -86,7 +82,7 @@ ___
 ___
 
 ### Repository Organization
-* **Main_Code_United** contains all the code for data cleaning, exploration, machine learning models, and related plots
+* **Main_Code** contains all the code for data cleaning, exploration, machine learning models, and related visualization.
 * **Notebooks** folder includes separate files with codes to clean and explore the data, and to create machine learning  models.
 * **Outcome_Files_DFs** folder has intermediate files like 'cleaned_data.csv'
 * **Presentation_and_Proposal** folder contains our final proposal in PDF format. However, after closely analyzing our data, we chose a Random Forest model instead of a Neural Network.
