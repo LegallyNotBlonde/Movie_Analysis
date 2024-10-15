@@ -21,9 +21,6 @@ ___
 
 <p> To streamline these critical but potentially time-consuming analyses, we aimed to build a machine learning model to predict movie revenue based on historical records. However, due to limitations in our publicly available data, which are detailed below, the accuracy and scope of our predictions may be affected.
 
-
-**BEFORE RUNNING A CODE IN GOOGLE COLAB:**
-Please **upload 'movie_metadata.csv' from the 'Resources' folder to the same directory level as the code in Google Colab**.
 ___
 
 ## Workflow Overview:
