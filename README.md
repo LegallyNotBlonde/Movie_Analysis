@@ -34,7 +34,7 @@ ___
 ### Data Exploration:
 Analyze the data's distribution, size, and types to understand its structure and key patterns. This helps identify which features are important and what transformations may be needed.
 
-### Machine Learning: 
+### Machine Learning (predicting continuous values):
 * **Model Selection:** Evaluate different machine learning models based on the type and size of the data.
 * Establish and assess Baseline metrics like **Linear Regression Model**
 * Based on size our data, we used **Random Forest** model using **StandardScale** and **get_dummies** function.
@@ -49,8 +49,8 @@ Analyze the data's distribution, size, and types to understand its structure and
 <p> 2. Correlation Heatmap
 <p> 3. Scatter plot of predicted vs. actual gross revenue (Multiple Linear Regression Model)
 <p> 4. Feature Importance for Numeric and Categorical Features (Basic Random Forest Model)
-<p> 5. Feature Importance and Heatmap for Numeric Values in the Optimized Random Forest Model
-<p> 6. Model Accuracy Rates Comparison: Linear Regression vs Basic vs Optimized Random Forest
+<p> 5. Feature Importance and Heatmap (Optimized Random Forest Model)
+<p> 6. Model Accuracy Rates Comparison: Linear Regression vs Basic vs Optimized Random Forest: R^2, MSE, MAE, RMSE
 
 ## Conclusion:
 
@@ -58,22 +58,26 @@ The Optimized Random Forest model outperforms both the Multiple Linear Regressio
 
 ___
 
-* This project is intended for Data Analysts and Machine Learning professionals.
-___
-
 ### Ethical considerations:
-* In this project, we used only publicly available, anonymized data to ensure privacy. We acknowledged dataset limitations and biases, such as missing release dates and revenue data, which may impact prediction accuracy. We mitigated bias by focusing on diverse variables and clearly communicated our analysis limitations. Our aim was to provide actionable insights to producers responsibly, supporting data-driven decisions while respecting creative integrity.
+* In this project, we used only publicly available, anonymized data to ensure privacy. We acknowledged dataset limitations and biases, such as missing release dates and oscar rewards/nominations, which may impact prediction accuracy. We mitigated bias by focusing on diverse variables and clearly communicated our analysis limitations. Our aim was to provide actionable insights to producers responsibly, supporting data-driven decisions while respecting creative integrity.
 * Could this analysis encourage studios to greenlight only projects predicted to be blockbusters, potentially sidelining smaller, more diverse films? While we can't know for certain, this is an important ethical consideration worth discussing.
 
 ___
 
 ### Data Limitations and Recommendations:
-* Gross revenue, budget, and profit figures are not adjusted for inflation.
+* Gross revenue and budget figures are not adjusted for inflation.
 * The dataset lacks release dates, hindering analysis of seasonality effects or competition when other major films are released close by.
+* The data lacks information on Oscar nominations and awards.
 * It only captures earnings from the first week in cinemas, missing subsequent revenue.
-* The data does not capture critical variables like marketing spend, plot popularity, theater count, and audience demographics.
+* The data does not capture critical variables like marketing spend, plot popularity, theater count, and audience demographics (more specific than just content rating).
 * Including these influential elements could greatly enhance the accuracy of the prediction mode.
-* Given that modern movies can generate up to 500 million dollar profit, continued investment and advancements in data analytics can provide even greater benefits.
+* Considering that modern movies can generate up to $500 million in profit per film, continued investment in data analytics has the potential to offer even greater benefits to the industry.
+___
+
+___
+### Other Details: 
+* This project is intended for Data Analysts and Machine Learning professionals. Given the 10-minute presentation limit, we kept our analysis concise, focusing on forecasting gross revenue using the available data.
+
 ___
 
 ### Data Source:
@@ -81,10 +85,10 @@ ___
 
 ___
 
-### Repository Organization
+### Repository Organization:
 * **Main_Code** contains all the code for data cleaning, exploration, machine learning models, and related visualization.
-* **Notebooks** folder includes separate files with codes to clean and explore the data, and to create machine learning  models.
-* **Outcome_Files_DFs** folder has intermediate files like 'cleaned_data.csv'
+* **Notebooks** folder includes separate files with codes to clean and explore the data, and to create, and evaluate different machine learning  models.
+* **Outcome_Files_DFs** folder has intermediate files like 'cleaned_data.csv' and 'model_comparison.csv'
 * **Proposal** folder contains our final proposal in PDF format. However, after closely analyzing our data, we chose a Random Forest model instead of a Neural Network.
 * **Visualizations** folder contains plots and graphs.
-* **Resources** folder includes our data source called "movie_metadata.csv"
+* **Resources** folder includes our data source called "movie_metadata.csv".
