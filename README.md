@@ -58,9 +58,6 @@ The Optimized Random Forest model outperforms both the Multiple Linear Regressio
 
 ___
 
-* This project is intended for Data Analysts and Machine Learning professionals.
-___
-
 ### Ethical considerations:
 * In this project, we used only publicly available, anonymized data to ensure privacy. We acknowledged dataset limitations and biases, such as missing release dates and revenue data, which may impact prediction accuracy. We mitigated bias by focusing on diverse variables and clearly communicated our analysis limitations. Our aim was to provide actionable insights to producers responsibly, supporting data-driven decisions while respecting creative integrity.
 * Could this analysis encourage studios to greenlight only projects predicted to be blockbusters, potentially sidelining smaller, more diverse films? While we can't know for certain, this is an important ethical consideration worth discussing.
@@ -70,10 +67,17 @@ ___
 ### Data Limitations and Recommendations:
 * Gross revenue, budget, and profit figures are not adjusted for inflation.
 * The dataset lacks release dates, hindering analysis of seasonality effects or competition when other major films are released close by.
+* The data lacks information on Oscar nominations and awards.
 * It only captures earnings from the first week in cinemas, missing subsequent revenue.
-* The data does not capture critical variables like marketing spend, plot popularity, theater count, and audience demographics.
+* The data does not capture critical variables like marketing spend, plot popularity, theater count, and audience demographics (more specific than just content rating).
 * Including these influential elements could greatly enhance the accuracy of the prediction mode.
 * Given that modern movies can generate up to 500 million dollar profit, continued investment and advancements in data analytics can provide even greater benefits.
+___
+
+___
+### Other Details: 
+* This project is intended for Data Analysts and Machine Learning professionals. Given the 10-minute presentation limit, we kept our analysis concise, focusing on forecasting gross revenue using the available data.
+
 ___
 
 ### Data Source:
