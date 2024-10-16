@@ -85,5 +85,6 @@ ___
 * **Main_Code** contains all the code for data cleaning, exploration, machine learning models, and related visualization.
 * **Notebooks** folder includes separate files with codes to clean and explore the data, and to create machine learning  models.
 * **Outcome_Files_DFs** folder has intermediate files like 'cleaned_data.csv'
-* **Presentation_and_Proposal** folder contains our final proposal in PDF format. However, after closely analyzing our data, we chose a Random Forest model instead of a Neural Network.
+* **Proposal** folder contains our final proposal in PDF format. However, after closely analyzing our data, we chose a Random Forest model instead of a Neural Network.
+* **Visualizations** folder contains plots and graphs.
 * **Resources** folder includes our data source called "movie_metadata.csv"
