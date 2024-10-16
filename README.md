@@ -34,7 +34,7 @@ ___
 ### Data Exploration:
 Analyze the data's distribution, size, and types to understand its structure and key patterns. This helps identify which features are important and what transformations may be needed.
 
-### Machine Learning: 
+### Machine Learning (predicting continuous values):
 * **Model Selection:** Evaluate different machine learning models based on the type and size of the data.
 * Establish and assess Baseline metrics like **Linear Regression Model**
 * Based on size our data, we used **Random Forest** model using **StandardScale** and **get_dummies** function.
@@ -49,8 +49,8 @@ Analyze the data's distribution, size, and types to understand its structure and
 <p> 2. Correlation Heatmap
 <p> 3. Scatter plot of predicted vs. actual gross revenue (Multiple Linear Regression Model)
 <p> 4. Feature Importance for Numeric and Categorical Features (Basic Random Forest Model)
-<p> 5. Feature Importance and Heatmap for Numeric Values in the Optimized Random Forest Model
-<p> 6. Model Accuracy Rates Comparison: Linear Regression vs Basic vs Optimized Random Forest
+<p> 5. Feature Importance and Heatmap (Optimized Random Forest Model)
+<p> 6. Model Accuracy Rates Comparison: Linear Regression vs Basic vs Optimized Random Forest: R^2, MSE, MAE, RMSE
 
 ## Conclusion:
 
