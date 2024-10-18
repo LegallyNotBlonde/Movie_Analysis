@@ -65,7 +65,7 @@ ___
 
 ___
 
-### Data Limitations and Recommendations:
+## Data Limitations and Recommendations:
 * Gross revenue and budget figures are not adjusted for inflation, making it difficult to compare movies released in different years.
 * Absence of release dates prevents analysis of seasonality trends and competition from other films during the same period.
 * Lacking data on awards for movies, actors, and directors, which could influence a film’s revenue and long-term success.
@@ -75,17 +75,17 @@ ___
 
 ___
 
-### Other Details:
+## Other Details:
 This project is intended for data analysts and machine learning professionals. Due to the 10-minute presentation limit, we focused on concise analysis to develop the most reliable machine learning model for forecasting gross revenue. Our visualizations center on the model’s development.
 
 ___
 
-### Data Source:
+## Data Source:
 [Kaggle](https://www.kaggle.com/datasets/carolzhangdc/imdb-5000-movie-dataset)
 
 ___
 
-### Repository Organization:
+## Repository Organization:
 * **Main_Code_Colab**: Contains all code for data cleaning, exploration, modeling, and visualization.
 * **Notebooks**: Includes files for cleaning, exploration, and evaluating machine learning models.
 * **Outcome_Files_DFs**: Stores intermediate files like 'cleaned_data.csv' and 'model_comparison.csv'.
