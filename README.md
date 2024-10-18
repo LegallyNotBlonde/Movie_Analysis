@@ -8,16 +8,16 @@
 
 ## Purpose: 
 1. **Forecasting Movie Revenue Based on Historical Performance**
-2. **Provide recommendations to movie producers on maximizing gross revenue**
-Identify key factors for successful movies, such as which types or features contribute most to high gross revenue.
+2. **Provide recommendations to movie producers on maximizing gross revenue**:
+identify key factors for successful movies, such as which features contribute most to high gross revenue.
 
 ___
 
 ## Project Overview:
 
-<p> Movie studios commonly track various metrics to optimize revenue and minimize costs. Key areas include box office performance (e.g., gross revenue and opening weekend sales) and production costs to calculate profit margins. 
-<p> Evaluating marketing effectiveness through advertising ROI, social media engagement, and audience feedback is another effective strategy. Timing and competition analysis help identify optimal release windows, while audience demographics guide content tailoring. 
-<p> Monitoring talent metrics, such as actor popularity, helps predict box office success. Additionally, streaming data, ancillary market performance, and long-term digital distribution trends are analyzed to maximize revenue beyond initial releases.
+<p>Movie studios commonly track various metrics to optimize revenue and minimize costs. Key areas include box office performance (e.g., gross revenue and opening weekend sales) and production costs to calculate profit margins. 
+<p>Evaluating marketing effectiveness through advertising ROI, social media engagement, and audience feedback is another key strategy. Timing and competition analysis helps identify optimal release windows, while audience demographics guide content tailoring. <p>Monitoring talent metrics, such as actor popularity, helps predict box office success. Additionally, streaming data, ancillary market performance, and long-term digital distribution trends are analyzed to maximize revenue beyond initial releases. 
+<p>To streamline these critical but time-consuming analyses, we aimed to build a machine learning model to predict movie revenue based on historical records. However, due to limitations in the publicly available data, which are detailed below, the accuracy and scope of our predictions may be affected.
 
 <p> To streamline these critical but potentially time-consuming analyses, we aimed to build a machine learning model to predict movie revenue based on historical records. However, due to limitations in our publicly available data, which are detailed below, the accuracy and scope of our predictions may be affected.
 
@@ -26,57 +26,57 @@ ___
 ## Workflow Overview:
 
 ### ETL:
-* Data was uploaded as csv file from the source.
-* Cleaining data by removing errors, duplicates, or missing values to ensure the data is accurate and usable. Clean data is essential for reliable results.
-* We used Google Colab because of it convenience. The code saves 'cleaned_data' to Colab Environment.
-* Given the relatively small size of our data (around 3,000 lines with around 30 columns), we did not use PySpark, as it would only increase processing time
+* Data was uploaded as a CSV file from the source.
+* Cleaned the data by removing errors, duplicates, or missing values to ensure accuracy and usability. Clean data is essential for reliable results.
+* We used Google Colab for its convenience. The code saves 'cleaned_data' and other variables to the Colab environment.
+* Given the relatively small size of our data (around 3,000 rows and 30 columns), we did not use PySpark, as it would only increase processing time.
 
 ### Data Exploration:
-Analyze the data's distribution, size, and types to understand its structure and key patterns. This helps identify which features are important and what transformations may be needed.
+Analyzed the data’s distribution, size, and types to understand its structure and key patterns. This helped identify important features and necessary transformations.
 
 ### Machine Learning (predicting continuous values):
-* **Model Selection:** Evaluate different machine learning models based on the type and size of the data.
-* Establish and assess Baseline metrics like **Linear Regression Model**
-* Based on size our data, we used **Random Forest** model using **StandardScale** and **get_dummies** function.
-* **Data Splitting, Training, and Evaluation:** Divide the data into training and testing sets. Train the model using the training data to learn patterns and relationships, then evaluate its performance with the testing set to ensure it accurately predicts new information.
-* **Feature importance** and its implementation depend on whether the model is overfitting or underfitting. However, identifying the most influential features can still provide crucial insights into effective movie strategies, such as prioritizing actors, marketing, or release timing, regardless of model performance.
-* Assess model performance to determine which to develop further by implementing feature engineering techniques.
-* **Model Optimization:** **Label encoding** and **feature engineering** helped enhance the model and maximize its accuracy and reliability.
+* **Model Selection:** Evaluated different machine learning models based on the data type and size.
+* Established baseline metrics with a **Linear Regression Model**.
+* Given the data size and type, we used a **Random Forest** model with **StandardScaler** and **get_dummies** functions.
+* **Data Splitting, Training, and Evaluation**: Split the data into training and testing sets. Trained the model to learn patterns from the training data and evaluated its performance on the testing set to ensure accurate predictions.
+* **Feature importance** helps identify key drivers of movie success (e.g., actors, marketing, or release timing), providing insights even when the model shows overfitting or underfitting.
+* Assessed model performance to determine which features to develop further using feature engineering.
+* **Model Optimization**: Applied **label encoding** and **feature engineering** to enhance the model's accuracy and reliability. Assessed performance on both training and testing data, optimizing to reduce MSE while maintaining a high R².
 
-### 'Main_Code.ipynb' includes the following visualizations related to the scope of the project: 
-* Please find the following visualization in our 'Main_Code_United' file: 
+### Visualizations:
 <p> 1. Data Distribution
 <p> 2. Correlation Heatmap
-<p> 3. Scatter plot of predicted vs. actual gross revenue (Multiple Linear Regression Model)
-<p> 4. Feature Importance for Numeric and Categorical Features (Basic Random Forest Model)
-<p> 5. Feature Importance and Heatmap (Optimized Random Forest Model)
-<p> 6. Model Accuracy Rates Comparison: Linear Regression vs Basic vs Optimized Random Forest: R^2, MSE, MAE, RMSE
+<p> 3. Scatter Plot: Predicted vs. Actual Gross Revenue (Linear Regression)
+<p> 4. Feature Importance: Numeric and Categorical Features (Basic Random Forest)
+<p> 5. Feature Importance and Heatmap (Optimized Random Forest)
+<p> 6. Train-Test Performance Comparison
+<p> 7. Accuracy Comparison: Linear Regression vs. Basic vs. Optimized Random Forest (R², MSE, MAE, RMSE)
 
 ## Conclusion:
 
-The Optimized Random Forest model outperforms both the Multiple Linear Regression and Basic Random Forest models. With an R-Squared of 0.999952, it explains nearly all the variance, while the other models show lower values (0.679788 and 0.581184). The optimized model also has much lower MSE, MAE, and RMSE, indicating far more accurate predictions. This demonstrates that optimization significantly improves the model's performance.
-
+The optimized Random Forest model outperforms both the Multiple Linear Regression and Basic Random Forest models. With an R² of 0.999952, it explains nearly all variance, while the other models score 0.679788 and 0.581184, respectively. The optimized model also achieves lower MSE, MAE, and RMSE, showing that optimization significantly improves performance.
 ___
 
-### Ethical considerations:
-* In this project, we used only publicly available, anonymized data to ensure privacy. We acknowledged dataset limitations and biases, such as missing release dates and oscar rewards/nominations, which may impact prediction accuracy. We mitigated bias by focusing on diverse variables and clearly communicated our analysis limitations. Our aim was to provide actionable insights to producers responsibly, supporting data-driven decisions while respecting creative integrity.
-* Could this analysis encourage studios to greenlight only projects predicted to be blockbusters, potentially sidelining smaller, more diverse films? While we can't know for certain, this is an important ethical consideration worth discussing.
+## Ethical Considerations:
+* We used only publicly available, anonymized data to ensure privacy.
+* Dataset limitations and biases, such as missing release dates and Oscar nominations/awards, may impact predictions.
+* We aimed to mitigate bias by focusing on diverse variables and transparently communicating our analysis limitations.
+* An important ethical question: Could such predictions encourage studios to favor blockbuster films, sidelining smaller, more diverse projects?
 
 ___
 
 ### Data Limitations and Recommendations:
-* Gross revenue and budget figures are not adjusted for inflation.
-* The dataset lacks release dates, hindering analysis of seasonality effects or competition when other major films are released close by.
-* The data lacks information on Oscar nominations and awards.
-* It only captures earnings from the first week in cinemas, missing subsequent revenue.
-* The data does not capture critical variables like marketing spend, plot popularity, theater count, and audience demographics (more specific than just content rating).
-* Including these influential elements could greatly enhance the accuracy of the prediction mode.
-* Considering that modern movies can generate up to $500 million in profit per film, continued investment in data analytics has the potential to offer even greater benefits to the industry.
-___
+* Gross revenue and budget figures are not adjusted for inflation, making it difficult to compare movies released in different years.
+* Absence of release dates prevents analysis of seasonality trends and competition from other films during the same period.
+* Lacking data on awards for movies, actors, and directors, which could influence a film’s revenue and long-term success.
+* The dataset only captures first-week revenue, omitting crucial insights into long-term earnings.
+* Key factors like marketing spend, plot popularity, theater count, and audience demographics are not included, which limits prediction accuracy.
+* Incorporating these variables would significantly enhance the model’s predictive power. With individual films generating up to $500M in profit, further investment in data analytics could unlock valuable insights for the movie industry.
 
 ___
-### Other Details: 
-* This project is intended for Data Analysts and Machine Learning professionals. Given the 10-minute presentation limit, we kept our analysis concise, focusing on forecasting gross revenue using the available data.
+
+### Other Details:
+This project is intended for data analysts and machine learning professionals. Due to the 10-minute presentation limit, we focused on concise analysis to develop the most reliable machine learning model for forecasting gross revenue. Our visualizations center on the model’s development.
 
 ___
 
@@ -86,9 +86,9 @@ ___
 ___
 
 ### Repository Organization:
-* **Main_Code** contains all the code for data cleaning, exploration, machine learning models, and related visualization.
-* **Notebooks** folder includes separate files with codes to clean and explore the data, and to create, and evaluate different machine learning  models.
-* **Outcome_Files_DFs** folder has intermediate files like 'cleaned_data.csv' and 'model_comparison.csv'
-* **Proposal** folder contains our final proposal in PDF format. However, after closely analyzing our data, we chose a Random Forest model instead of a Neural Network.
-* **Visualizations** folder contains plots and graphs.
-* **Resources** folder includes our data source called "movie_metadata.csv".
+* **Main_Code_Colab**: Contains all code for data cleaning, exploration, modeling, and visualization.
+* **Notebooks**: Includes files for cleaning, exploration, and evaluating machine learning models.
+* **Outcome_Files_DFs**: Stores intermediate files like 'cleaned_data.csv' and 'model_comparison.csv'.
+* **Proposal**: Contains the final proposal PDF. After further analysis, we chose Random Forest over a Neural Network.
+* **Visualizations**: Contains plots and graphs used in the project.
+* **Resources**: Includes the dataset 'movie_metadata.csv'.
