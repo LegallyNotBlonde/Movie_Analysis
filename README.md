@@ -72,7 +72,7 @@ ___
 * Information on awards for movies, actors, and directors is missing, though such achievements often impact long-term revenue and audience appeal.
 * The dataset focuses on first-week revenue, offering a glimpse into initial performance. Including long-term earnings data would provide a more comprehensive view.
 * Key variables like marketing spend, theater count, plot popularity, and audience demographics are not included, creating opportunities for improved prediction accuracy with richer data.
-* Expanding the dataset with these factors could unlock deeper insights into what drives profitability. With some films generating up to $500M in profit, further investment in data analytics holds great potential for the industry.
+* Expanding the dataset with these factors could unlock deeper insights into what drives gross revenue. With some films generating up to $500M in profit, further investment in data analytics holds great potential for the industry.
 
 ___
 
@@ -87,7 +87,7 @@ ___
 ___
 
 ## Repository Organization:
-* **Main_Code_Colab**: Contains the complete code for data cleaning, exploration, modeling, and visualization. This is the primary code to run.
+* **Main_Code_Colab**: Contains the complete code for data cleaning, exploration, modeling, and visualization. **This is the primary code to run.**
 * **Notebooks**: Includes intermediate (development) code files for data cleaning, exploration, and optimization of various machine learning models.
 * **Outcome_Files_DFs**: Stores intermediate files like 'cleaned_data.csv' and 'model_comparison.csv'.
 * **Proposal**: Contains the final proposal PDF. After further analysis, we chose Random Forest over a Neural Network.
