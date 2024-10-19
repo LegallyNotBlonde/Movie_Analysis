@@ -1,5 +1,5 @@
 # Movie Revenue Forecasting with Machine Learning
-[Google Colab Code Link](https://colab.research.google.com/drive/1I7Sws_34FHaYJLogppJ_HwRKRuDm-KTl#scrollTo=WqzGjx7cRAX5)
+[Google Colab Code Link](https://colab.research.google.com/drive/1I7Sws_34FHaYJLogppJ_HwRKRuDm-KTl?usp=sharing) *This link grants view-only access.*
 
 ## Project Collaborators:
 * [Iosif Vard](https://github.com/IosifVard)
