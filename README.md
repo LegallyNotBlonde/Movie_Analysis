@@ -66,9 +66,9 @@ Analyzed the data’s distribution, size, and types to understand its structure 
 
 <p> 7. Accuracy Comparison: Linear Regression vs. Basic vs. Optimized Random Forest (R², MSE, MAE, RMSE)
 
-![RSquared](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/R-squared%20all%20model%20comparison.png)
+![R-Squared](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/R-squared%20all%20model%20comparison.png)
 ![MSE](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/MSE%20all%20model%20comparison.png)
-![RMSE](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/MAE%20and%20RMSE%20all%20model%20comparison.png)
+![RMSE](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/RMSE_comparison.png)
 
 
 ## Conclusion:
