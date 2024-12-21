@@ -49,9 +49,16 @@ Analyzed the data’s distribution, size, and types to understand its structure 
 <p> 2. Correlation Heatmap
 <p> 3. Scatter Plot: Predicted vs. Actual Gross Revenue (Linear Regression)
 <p> 4. Feature Importance: Numeric and Categorical Features (Basic Random Forest)
+![alt text](image-2.png)
 <p> 5. Feature Importance and Heatmap (Optimized Random Forest)
+![alt text](image-1.png)
 <p> 6. Train-Test Performance Comparison
+![alt text](image-2.png)
 <p> 7. Accuracy Comparison: Linear Regression vs. Basic vs. Optimized Random Forest (R², MSE, MAE, RMSE)
+![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
+
 
 ## Conclusion:
 
