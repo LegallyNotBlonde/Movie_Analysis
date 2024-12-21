@@ -45,13 +45,18 @@ Analyzed the data’s distribution, size, and types to understand its structure 
 * **Model Optimization**: Applied **label encoding** and **feature engineering** to enhance the model's accuracy and reliability. Assessed performance on both training and testing data, optimizing to reduce MSE while maintaining a high R².
 
 ### Visualizations:
-![Data Distribution](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/distribution.png)
-![Correlation Heatmap](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/original%20heatmap.png)
-<p> 3. Scatter Plot: Predicted vs. Actual Gross Revenue (Linear Regression)
-<p> 4. Feature Importance: Numeric and Categorical Features (Basic Random Forest)
-<p> 5. Feature Importance and Heatmap (Optimized Random Forest)
+<p> 1. Data Distribution [Link](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/distribution.png)
+<p> 2. Correlation Heatmap [Link](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/feature%20importance%20basic%20random%20forest.png)
+<p> 3. Scatter Plot: Predicted vs. Actual Gross Revenue [Linear Regression Plot]()
+<p> 4. Feature Importance: Numeric and Categorical Features 
+![Basic Random Forest](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/feature%20importance%20basic%20random%20forest.png)
+<p> 5. Feature Importance and Heatmap (Optimized Random Forest) [Link](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/feature%20importance%20optimized%20random%20forest.png)
 <p> 6. Train-Test Performance Comparison
+
 <p> 7. Accuracy Comparison: Linear Regression vs. Basic vs. Optimized Random Forest (R², MSE, MAE, RMSE)
+![RSquared](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/MSE%20all%20model%20comparison.png)
+![MSE](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/MSE%20all%20model%20comparison.png)
+![RMSE](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/MAE%20and%20RMSE%20all%20model%20comparison.png)
 
 
 ## Conclusion:
