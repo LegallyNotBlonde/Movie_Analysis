@@ -45,19 +45,14 @@ Analyzed the data’s distribution, size, and types to understand its structure 
 * **Model Optimization**: Applied **label encoding** and **feature engineering** to enhance the model's accuracy and reliability. Assessed performance on both training and testing data, optimizing to reduce MSE while maintaining a high R².
 
 ### Visualizations:
-<p> 1. Data Distribution
+<p> 1. [Data Distribution](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/distribution.png)
 <p> 2. Correlation Heatmap
+img src="https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/optimized%20random%20forest%20heatmap.png" alt="Correlation Heatmap" width="600" 
 <p> 3. Scatter Plot: Predicted vs. Actual Gross Revenue (Linear Regression)
 <p> 4. Feature Importance: Numeric and Categorical Features (Basic Random Forest)
-![alt text](image-2.png)
 <p> 5. Feature Importance and Heatmap (Optimized Random Forest)
-![alt text](image-1.png)
 <p> 6. Train-Test Performance Comparison
-![alt text](image-2.png)
 <p> 7. Accuracy Comparison: Linear Regression vs. Basic vs. Optimized Random Forest (R², MSE, MAE, RMSE)
-![alt text](image-3.png)
-![alt text](image-4.png)
-![alt text](image-5.png)
 
 
 ## Conclusion:
