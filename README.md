@@ -15,12 +15,12 @@ Identify the key factors contributing to high gross revenue and offer actionable
 ___
 
 ## Key Skills Demonstrated:
-* **Data Cleaning and Preparation:** Successfully handled real-world data issues, such as missing values and duplicates, ensuring a reliable dataset for analysis (Python, Google Coab).
+* **Data Cleaning and Preparation:** Successfully handled real-world data issues, such as missing values and duplicates, ensuring a reliable dataset for analysis (Python, Pandas, NumPy, Google Colab).
 * **Exploratory Data Analysis (EDA):** Identified key patterns and correlations in the dataset to inform feature selection and transformations.
-* **Machine Learning Expertise:** Applied multiple models, including *Linear Regression* and *Random Forest*, to predict continuous values, showcasing strong understanding of regression techniques.
+* **Machine Learning Expertise:** Applied multiple models, including *Linear Regression* and *Random Forest*, to predict continuous values, showcasing strong understanding of regression techniques and evaluation metrics such as R², MSE, and RMSE.
 * **Feature Engineering and Optimization:** Enhanced model performance using advanced techniques like label encoding, feature selection, and hyperparameter tuning.
-* **Data Visualization:** Created meaningful visualizations, including heatmaps, scatter plots, and feature importance charts, to communicate insights effectively.
-* **Project Management and Collaboration:** Organized the repository with clear documentation and logical workflows, demonstrating teamwork and attention to detail.
+* **Data Visualization:** Created meaningful visualizations using Matplotlib and Seaborn, including heatmaps, scatter plots, and feature importance charts, to communicate insights effectively.
+* **Project Management and Collaboration:** Organized the repository with clear documentation and logical workflows, demonstrating teamwork and version control skills using Git and Google Colab.
 ___
 
 ## Project Overview:
@@ -85,7 +85,7 @@ ___
 
 This project successfully developed a machine learning model to forecast movie revenue with outstanding accuracy:
 * The optimized Random Forest model achieved an R² of 0.999952, far surpassing the performance of Linear Regression (R²: 0.679788) and Basic Random Forest (R²: 0.581184).
-* Key factors influencing gross revenue include production budgets, lead actor popularity, and IMDb ratings.
+* Key factors influencing gross revenue include production budgets, lead actor popularity, and IMDb ratings. 
 * The model’s insights provide a strong foundation for guiding movie producers in decision-making related to resource allocation, casting, and marketing strategies.
 * Identified data limitations, such as missing release dates and marketing spend, highlight potential areas for model refinement in future iterations.
 ___
