@@ -1,26 +1,34 @@
-# Movie Revenue Forecasting with Machine Learning
-[Google Colab Code Link](https://colab.research.google.com/drive/1I7Sws_34FHaYJLogppJ_HwRKRuDm-KTl?usp=sharing) *This link grants view-only access.*
+# Forecasting Movie Revenue with Machine Learning: A Data-Driven Approach
+Explore the full code implementation on [Google Colab](https://colab.research.google.com/drive/1I7Sws_34FHaYJLogppJ_HwRKRuDm-KTl?usp=sharing) *(view-only)*.
 
 ## Project Collaborators:
 * [Iosif Vard](https://github.com/IosifVard)
 * [Jean Vicencio](https://github.com/jpvicencio)
 * [Sabrina Linden](https://github.com/LegallyNotBlonde)
-
+___
 
 ## Purpose: 
-1. **Forecasting Movie Revenue Based on Historical Performance**
-2. **Provide recommendations to movie producers on maximizing gross revenue**:
-identify key factors for successful movies, such as which features contribute most to high gross revenue.
+1. **Accurately Predict Movie Revenue**
+Develop a machine learning model to forecast movie revenue based on historical data.
+2. **Provide Data-Driven Insights**:
+Identify the key factors contributing to high gross revenue and offer actionable insights to movie producers for improving box office performance.
+___
 
+## Key Skills Demonstrated:
+* **Data Cleaning and Preparation:** Successfully handled real-world data issues, such as missing values and duplicates, ensuring a reliable dataset for analysis.
+* **Exploratory Data Analysis (EDA):** Identified key patterns and correlations in the dataset to inform feature selection and transformations.
+* **Machine Learning Expertise:** Applied multiple models, including *Linear Regression* and *Random Forest*, to predict continuous values, showcasing strong understanding of regression techniques.
+* **Feature Engineering and Optimization:** Enhanced model performance using advanced techniques like label encoding, feature selection, and hyperparameter tuning.
+* **Data Visualization:** Created meaningful visualizations, including heatmaps, scatter plots, and feature importance charts, to communicate insights effectively.
+* **Project Management and Collaboration:** Organized the repository with clear documentation and logical workflows, demonstrating teamwork and attention to detail.
 ___
 
 ## Project Overview:
 
-<p>Movie studios commonly track various metrics to optimize revenue and minimize costs. Key areas include box office performance (e.g., gross revenue and opening weekend sales) and production costs to calculate profit margins. 
-<p>Evaluating marketing effectiveness through advertising ROI, social media engagement, and audience feedback is another key strategy. Timing and competition analysis helps identify optimal release windows, while audience demographics guide content tailoring. <p>Monitoring talent metrics, such as actor popularity, helps predict box office success. Additionally, streaming data, ancillary market performance, and long-term digital distribution trends are analyzed to maximize revenue beyond initial releases. 
-<p>To streamline these critical but time-consuming analyses, we aimed to build a machine learning model to predict movie revenue based on historical records. However, due to limitations in the publicly available data, which are detailed below, the accuracy and scope of our predictions may be affected.
-
-<p> To streamline these critical but potentially time-consuming analyses, we aimed to build a machine learning model to predict movie revenue based on historical records. However, due to limitations in our publicly available data, which are detailed below, the accuracy and scope of our predictions may be affected.
+* Movie studios commonly track various metrics to optimize revenue and minimize costs. Key areas include box office performance (e.g., gross revenue and opening weekend sales) and production costs to calculate profit margins. 
+* Evaluating marketing effectiveness through advertising ROI, social media engagement, and audience feedback is another key strategy. Timing and competition analysis helps identify optimal release windows, while audience demographics guide content tailoring. 
+* Monitoring talent metrics, such as actor popularity, helps predict box office success. Additionally, streaming data, ancillary market performance, and long-term digital distribution trends are analyzed to maximize revenue beyond initial releases. 
+* To streamline these critical but time-consuming analyses, we aimed to build a machine learning model to predict movie revenue based on historical records. However, due to limitations in the publicly available data, which are detailed below, the accuracy and scope of our predictions may be affected.
 
 ___
 
@@ -28,7 +36,7 @@ ___
 
 ### ETL:
 * Data was uploaded as a CSV file from the source.
-* Cleaned the data by removing errors, duplicates, or missing values to ensure accuracy and usability. Clean data is essential for reliable results.
+* Cleaned the data by removing errors, duplicates, or missing values to ensure accuracy and usability. This thorough data cleaning ensures that the models are trained on high-quality data, improving reliability.
 * We used Google Colab for its convenience. The code saves 'cleaned_data' and other variables to the Colab environment.
 * Given the relatively small size of our data (around 3,000 rows and 30 columns), we did not use PySpark, as it would only increase processing time.
 
@@ -38,55 +46,68 @@ Analyzed the data’s distribution, size, and types to understand its structure 
 ### Machine Learning (predicting continuous values):
 * **Model Selection:** Evaluated different machine learning models based on the data type and size.
 * Established baseline metrics with a **Linear Regression Model**.
-* Given the data size and type, we used a **Random Forest** model with **StandardScaler** and **get_dummies** functions.
+* Given the data size and type, we used a **Random Forest** model with **StandardScaler** and **get_dummies** functions. StandardScaler was used to normalize numerical features, and get_dummies transformed categorical data into machine-readable formats.
 * **Data Splitting, Training, and Evaluation**: Split the data into training and testing sets. Trained the model to learn patterns from the training data and evaluated its performance on the testing set to ensure accurate predictions.
 * **Feature importance** helps identify key drivers of movie success (e.g., actors, marketing, or release timing), providing insights even when the model shows overfitting or underfitting.
 * Assessed model performance to determine which features to develop further using feature engineering.
 * **Model Optimization**: Applied **label encoding** and **feature engineering** to enhance the model's accuracy and reliability. Assessed performance on both training and testing data, optimizing to reduce MSE while maintaining a high R².
+___
 
 ### Visualizations:
-<p> 1. Data Distribution 
-
+1. Data Distribution 
 [Link](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/distribution.png)
-<p> 2. Correlation Heatmap 
 
+2. Correlation Heatmap 
 [Link](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/original%20heatmap.png)
-<p> 3. Scatter Plot: Predicted vs. Actual Gross Revenue 
 
+3. Scatter Plot: Predicted vs. Actual Gross Revenue 
 [Linear Regression Plot](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/Linear%20Regression.png)
-<p> 4. Feature Importance: Numeric and Categorical Features
 
+4. Feature Importance: Numeric and Categorical Features
 ![Basic Random Forest](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/feature%20importance%20basic%20random%20forest.png)
-<p> 5. Feature Importance and Heatmap (Optimized Random Forest) 
 
+5. Feature Importance and Heatmap (Optimized Random Forest) 
 [Link](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/feature%20importance%20optimized%20random%20forest.png)
-<p> 6. Train-Test Performance Comparison
+
+6. Train-Test Performance Comparison
 
 ![Training vs. Testing Performance Metrics](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/Train-Test%20Performance%20Comparison.png)
 
-<p> 7. Accuracy Comparison: Linear Regression vs. Basic vs. Optimized Random Forest (R², MSE, MAE, RMSE)
+7. Accuracy Comparison Across Models: Metrics such as R², MSE, and RMSE highlight the optimized model's superior performance.
 
 ![R-Squared](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/R-squared%20all%20model%20comparison.png)
 ![MSE](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/MSE%20all%20model%20comparison.png)
 ![RMSE](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/RMSE_comparison.png)
+___
 
+## Results Summary:
 
-## Conclusion:
+This project successfully developed a machine learning model to forecast movie revenue with outstanding accuracy:
+* The optimized Random Forest model achieved an R² of 0.999952, far surpassing the performance of Linear Regression (R²: 0.679788) and Basic Random Forest (R²: 0.581184).
+* Key factors influencing gross revenue include production budgets, lead actor popularity, and IMDb ratings.
+* The model’s insights provide a strong foundation for guiding movie producers in decision-making related to resource allocation, casting, and marketing strategies.
+* Identified data limitations, such as missing release dates and marketing spend, highlight potential areas for model refinement in future iterations.
+___
 
-The optimized Random Forest model outperforms both the Multiple Linear Regression and Basic Random Forest models. With an R² of 0.999952, it explains nearly all variance, while the other models score 0.679788 and 0.581184, respectively. The optimized model also achieves lower MSE, MAE, and RMSE, showing that optimization significantly improves performance.
+## Conclusion and Recommendations:
+
+The optimized Random Forest model demonstrates that targeted investments can significantly boost movie revenue. Based on our findings, we recommend the following strategies for maximizing gross revenue:
+1. **Invest in High Budgets:** Larger budgets typically lead to higher revenue due to improved production quality and extensive marketing efforts.
+2. **Cast Popular Lead Actors:** Star power strongly correlates with audience attraction and box office success.
+3. **Boost IMDb Ratings:** Enhancing audience engagement and maintaining quality can drive higher ratings, often linked to better revenue.
+4. **Optimize Release Timing:** Although not analyzed directly, industry trends suggest strategic timing (e.g., holidays) can enhance box office performance.
+By implementing these strategies, producers can make data-driven decisions that enhance profitability while addressing limitations such as data availability for seasonality and marketing insights.
 ___
 
 ## Ethical Considerations:
 * We used only publicly available, anonymized data to ensure privacy.
 * Dataset limitations and biases, such as missing release dates and Oscar nominations/awards, may impact predictions.
 * We aimed to mitigate bias by focusing on diverse variables and transparently communicating our analysis limitations.
-* An important ethical question: Could such predictions encourage studios to favor blockbuster films, sidelining smaller, more diverse projects?
-
 ___
 
 ## Data Limitations and Recommendations:
 
-* Gross revenue and budget figures are not adjusted for inflation, so comparisons between movies across years may vary. Adjusting for inflation could improve historical insights.
+* Future datasets with inflation-adjusted figures and marketing metrics could enhance prediction accuracy and provide deeper industry insights.
 * Release dates are not included, limiting the ability to analyze seasonality trends or competition. Adding this data would enhance market timing analysis.
 * Information on awards for movies, actors, and directors is missing, though such achievements often impact long-term revenue and audience appeal.
 * The dataset focuses on first-week revenue, offering a glimpse into initial performance. Including long-term earnings data would provide a more comprehensive view.
