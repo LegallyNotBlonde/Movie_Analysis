@@ -77,7 +77,7 @@ ___
 
 ![R-Squared](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/R-squared%20all%20model%20comparison.png)
 ![MSE](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/MSE%20all%20model%20comparison.png)
-[MAE link](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/MAE_comparison.png)
+[MAE link](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/MAE_comparison.pngg)
 ![RMSE](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/RMSE_comparison.png)
 ___
 
