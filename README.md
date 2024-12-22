@@ -8,14 +8,14 @@ Explore the full code implementation on [Google Colab](https://colab.research.go
 ___
 
 ## Purpose: 
-1. **Accurately Predict Movie Revenue**
+1. **Accurately Predict Movie Revenue:**
 Develop a machine learning model to forecast movie revenue based on historical data.
 2. **Provide Data-Driven Insights**:
 Identify the key factors contributing to high gross revenue and offer actionable insights to movie producers for improving box office performance.
 ___
 
 ## Key Skills Demonstrated:
-* **Data Cleaning and Preparation:** Successfully handled real-world data issues, such as missing values and duplicates, ensuring a reliable dataset for analysis.
+* **Data Cleaning and Preparation:** Successfully handled real-world data issues, such as missing values and duplicates, ensuring a reliable dataset for analysis (Python, Google Coab).
 * **Exploratory Data Analysis (EDA):** Identified key patterns and correlations in the dataset to inform feature selection and transformations.
 * **Machine Learning Expertise:** Applied multiple models, including *Linear Regression* and *Random Forest*, to predict continuous values, showcasing strong understanding of regression techniques.
 * **Feature Engineering and Optimization:** Enhanced model performance using advanced techniques like label encoding, feature selection, and hyperparameter tuning.
@@ -73,10 +73,11 @@ ___
 
 ![Training vs. Testing Performance Metrics](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/Train-Test%20Performance%20Comparison.png)
 
-7. Accuracy Comparison Across Models: Metrics such as R², MSE, and RMSE highlight the optimized model's superior performance.
+7. Accuracy Comparison Across Models: Metrics such as R², MSE, MAE, and RMSE highlight the optimized model's superior performance.
 
 ![R-Squared](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/R-squared%20all%20model%20comparison.png)
 ![MSE](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/MSE%20all%20model%20comparison.png)
+[MAE link](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/MAE_comparison.png)
 ![RMSE](https://github.com/LegallyNotBlonde/Movie_Analysis/blob/main/Visualizations/RMSE_comparison.png)
 ___
 
